@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrative Cupping Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top bar with social media and hours -->
+    <div class="top-bar">
+        <div class="left1">
+            <i class="fa-solid fa-clock"></i> Mon - Fri 10AM - 3PM | Sat 10AM - 2PM
+        </div>
+        <div class="right1">
+            <a href="http://www.facebook.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="http://www.instagram.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="http://www.linkedin.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="http://www.x.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="http://www.youtube.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://wa.me/2347066734000" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> WhatsApp: +2347066734000</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/Logo2.png" alt="Integrative Cupping Care Logo">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="services.html">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="health-consult.html">Health Consult</a></li>
+                    <li><a href="cupping-therapy.html">Cupping Therapy</a></li>
+                </ul>
+            </li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li class="dropdown">
+                <a href="articles.html">Articles</a>
+                <ul class="dropdown-content">
+                    <li><a href="preparing-session.html">Preparing for Your First Cupping Session</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="schedule-appointment.html" class="cta-button">Schedule Appointment</a></li>
+        </ul>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>    
+    
+    <!-- Contact Page Content -->
+    <div class="contact-page">
+        <!-- First Header: CONTACT -->
+        <div class="contact-header" style="background-color: #f5e8d0;">
+            <h1>CONTACT</h1>
+        </div>
+
+        <!-- Second Header: Reach Out To Us -->
+        <div class="reach-out-header">
+            <h2>Reach Out To Us</h2>
+        </div>
+
+        <!-- Contact Form and Details -->
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h3>Drop a Message</h3>
+                <form id="contact-form" onsubmit="return validateContact()">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write a Message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Contact Details Section -->
+            <div class="contact-details-section">
+                <h3>CONTACT DETAILS</h3>
+                <p><i class="fa-solid fa-location-dot"></i> General Hospital Minna, Minna Niger State, Nigeria</p>
+                <p><i class="fa-solid fa-phone"></i> +2347066734000</p>
+                <p><i class="fa-solid fa-envelope"></i> umarahmadbd@gmail.com</p>
+
+                <!-- Operating Hours -->
+                <h3>Operating Hours</h3>
+                <p>Monday: 10AM - 3PM</p>
+                <p>Tuesday: 10AM - 3PM</p>
+                <p>Wednesday: 10AM - 3PM</p>
+                <p>Thursday: 10AM - 3PM</p>
+                <p>Friday: 10AM - 3PM</p>
+                <p>Saturday: 10AM - 2PM</p>
+
+                <!-- Stay Connected Section -->
+                <h3>CONNECT WITH US</h3>
+                <div class="social-icons">
+                    <a href="http://www.facebook.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="http://www.instagram.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="http://www.linkedin.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://www.x.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="http://www.youtube.com/integrative-cupping-care" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map Section -->
+        <div class="map-section">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.55639591365!2d6.549035265532675!3d9.6135696742258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d90a998673899%3A0x54f72e57386751d3!2sGeneral%20Hospital%2C%20Minna%2C%20Niger%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1691419990385!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="assets/Logo2.png" alt="Integrative Cupping Care Logo" class="footer-logo">
+                <p>At Integrative Cupping Care, we are committed to providing holistic treatment and quality care to get you back on track.</p>
+            </div>
+    
+            <div class="footer-center">
+                <h3>Contact</h3>
+                <p><i class="fa-solid fa-location-dot"></i> General Hospital Minna, Minna Niger State, Nigeria</p>
+                <p><i class="fa-solid fa-phone"></i> +2347066734000</p>
+                <p><i class="fa-solid fa-envelope"></i> umarahmadbd@gmail.com</p>
+            </div>
+    
+            <div class="footer-right">
+                <h3>Operating Hours</h3>
+                <p>Monday - Friday: 10AM – 3PM</p>
+                <p>Saturday: 10AM – 2PM</p>    
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Integrative Cupping Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
